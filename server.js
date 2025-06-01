@@ -42,7 +42,7 @@ if (process.env.MONGO_URI) {
     collectionName: 'sessions'
   });
 } else {
-  console.log('⚠️  Warning: Using memory store for sessions (not suitable for production)');
+  console.log('⚠️  Warning: Using memorys store for sessions (not suitable for production)');
 }
 
 app.use(session(sessionConfig));
